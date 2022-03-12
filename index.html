@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- goes in the heading -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Shelf</title>
+    <!--
+    Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+    A Bootstrap styled table representing your choice of data.
+    A Bootstrap styled form that allows a user to add a new row to the table when submitted.
+    -->
+</head>
+
+<body class="container">
+    <div class="card mt-5 mx-5" id="form-style">
+        <h5 class="card-header">BookShelf</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class=col-sm>
+                    <label for="title-input">Book Title</label>
+                    <input type="text" class='form-control' id="title-input">
+                </div>
+                <div class=col-sm>
+                    <label for="author-input">Author</label>
+                    <input type="text" class='form-control' id="author-input"><br>
+                </div>
+                <div class=col-sm>
+                    <label for="author-input">Genre</label>
+                    <input type="text" class='form-control' id="genre-input"><br>
+                </div>
+                <div class="col-sm d-flex align-items-center">
+                    <button id="add-book-button" class="btn btn-primary">Add Book</button>
+                </div>
+            </div>
+        </div>
+        <table id="book-shelf-table" class="table table-dark table-striped">
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th></th>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+
+
+
+    
+    <script src="index.js"></script>
+    <!--goes before the bootstrap bundle -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- goes in the body at the bottom below jquery bundle -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
